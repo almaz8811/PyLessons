@@ -66,3 +66,42 @@ print(phone_book)
 '''
 Список помещаем в словарь
 '''
+# Создаем список языков программирования
+computer_language = ['PHP', 'Python', 'C++']
+# В переменной student создаем словарь с элементами ключ:значение
+student = {
+    'name': 'Иван',
+    'city': 'Москва',
+    'phone': '999-99-99'}
+# Выведим на экран значения phone_book
+print(student)
+# Добавляем в словарь student список computer_language
+student['learn'] = computer_language
+print(student)
+# Выведим на экран значение элемента learn
+print(student['learn'])
+# Получение второго элемента списка learn
+print(student['learn'][1])
+# Добавляем в список новый элемент
+student['learn'].append('Java')
+print(student)
+
+'''
+Словарь помещаем в список
+'''
+# В переменной student создаем список студентов, список состоит из словарей
+student = [
+            {'name': 'Иван', 'course': 3, 'phone': '999-99-99'},
+            {'name': 'Дмитрий', 'course': 2, 'phone': '888-88-88'},
+            {'name': 'Петр', 'course': 5, 'phone': '777-77-77'}
+]
+# Выведим на экран значения переменной student
+print(student)
+# Выведим на экран первый элемент (первый словарь)
+print(student[0])
+# Выведим на экран course первого элемента (первого словаря)
+print(student[0]['course'])
+# Переведем студента Ивана на следующий курс
+student[0]['course'] += 1 # student[0]['course'] = student[0]['course'] + 1
+# Проверия изменение первого элемента списка (выведим на экран первый словарь)
+print(student[0])
